@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main () 
+{
+    float x1, x2, y1, y2, x3, y3, AB, AC, CB, p;
+    cin>>x1>>x2>>x3>>y1>>y2>>y3;
+    AB = sqrt ((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+    CB = sqrt ((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
+    AC = sqrt ((x3 - x1) * (x3 - x1) + (y3 - y1) * (y3 - y1));
+    p =  (AB + CB + AC)/2;
+    cout << AB + CB + AC << endl <<sqrt(p*(p-AB)*(p-CB)*(p-AC));
+    return 0;
+}
