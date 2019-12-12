@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int x1, x2, y1, y2, a, b, s, p;
+    cin>>x1>>x2>>y1>>y2;
+    a = abs(y2 - y1);
+    b = abs(x2 - x1);
+    s = a * b;
+    p = 2*(a+b);
+    cout<<s<<endl<<p;
+    return 0;
+}
